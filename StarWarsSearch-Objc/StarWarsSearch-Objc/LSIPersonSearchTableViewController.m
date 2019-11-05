@@ -9,10 +9,13 @@
 #import "LSIPersonSearchTableViewController.h"
 #import "LSIPersonTableViewCell.h"
 #import "LSIPersonController.h"
+#import "LSIPerson.h"
 
 @interface LSIPersonSearchTableViewController ()
 
 @property LSIPersonController *controller;
+@property NSArray *people;
+
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
@@ -48,38 +51,44 @@
 
 	
 	
-	// Sanity check
-	[self.controller searchForPeopleWithSearchTerm:@"Skywalker" completion:^(NSArray *people, NSError *error) {
-		NSLog(@"Completion");
-		
-		if (error) {
-			NSLog(@"Error: %@", error);
-			return;
-		}
-		
-		NSLog(@"Search result: %@", people);
-		
-	}];
+
 	
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 	
-	// TODO: Search for people and update UI async on main thread
+	[self.controller searchForPeopleWithSearchTerm:searchBar.text completion:^(NSArray *people, NSError *error) {
+		if (error) {
+			NSLog(@"Error: %@", error);
+			return;
+		}
+		dispatch_async(dispatch_get_main_queue(), ^{
+			// set the people
+			self.people = people;
+			// update the UI
+			[self.tableView reloadData];
+		});
+		NSLog(@"Search result: %@", people);
+		
+	}];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-	// TODO: Return the number of people in the search results
-	return 0;
+	return self.people.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LSIPersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
 
-	// TODO: Update the cell with the current person
+	LSIPerson *person = self.people[indexPath.row];
+	
+	cell.person = person; // Handle the UI update
+	
+//	cell.nameLabel.text = person.name;
+	
+	
     return cell;
 }
 

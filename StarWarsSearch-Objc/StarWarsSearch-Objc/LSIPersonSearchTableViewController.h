@@ -10,6 +10,4 @@
 
 @interface LSIPersonSearchTableViewController : UITableViewController <UISearchBarDelegate>
 
-// TODO: Create an array to store people, that the table view can load
-
 @end
