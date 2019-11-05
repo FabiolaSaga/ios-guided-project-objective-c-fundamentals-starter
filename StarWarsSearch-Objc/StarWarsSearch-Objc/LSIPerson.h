@@ -17,4 +17,11 @@
 @property NSString *height;
 @property NSString *eyeColor;
 
+- (instancetype)initWithName:(NSString *)name
+				   birthYear:(NSString *)birthYear
+					  height:(NSString *)height
+					eyeColor:(NSString *)eyeColor;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @end
