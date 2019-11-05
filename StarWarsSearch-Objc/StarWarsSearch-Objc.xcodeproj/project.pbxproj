@@ -19,6 +19,7 @@
 		BD9AA50E2371D7D400E8D4EF /* LSIPersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA50D2371D7D400E8D4EF /* LSIPersonTests.m */; };
 		BD9AA5122371D8E200E8D4EF /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = BD9AA5112371D8E200E8D4EF /* Person.json */; };
 		BD9AA5142371D90F00E8D4EF /* StarWarsResults.json in Resources */ = {isa = PBXBuildFile; fileRef = BD9AA5132371D90F00E8D4EF /* StarWarsResults.json */; };
+		BD9AA5262371E49E00E8D4EF /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA5252371E49E00E8D4EF /* LSIPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BD9AA5102371D8B000E8D4EF /* LSIFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
 		BD9AA5112371D8E200E8D4EF /* Person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
 		BD9AA5132371D90F00E8D4EF /* StarWarsResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StarWarsResults.json; sourceTree = "<group>"; };
+		BD9AA5242371E49E00E8D4EF /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
+		BD9AA5252371E49E00E8D4EF /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				BD9AA4E02371D53400E8D4EF /* SceneDelegate.h */,
 				BD9AA4E12371D53400E8D4EF /* SceneDelegate.m */,
 				BD9AA5042371D55900E8D4EF /* Main.storyboard */,
+				BD9AA5242371E49E00E8D4EF /* LSIPerson.h */,
+				BD9AA5252371E49E00E8D4EF /* LSIPerson.m */,
 				BD9AA5062371D58300E8D4EF /* LSIPersonSearchTableViewController.h */,
 				BD9AA5072371D58300E8D4EF /* LSIPersonSearchTableViewController.m */,
 				BD9AA5092371D64500E8D4EF /* LSIPersonTableViewCell.h */,
@@ -237,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9AA4DF2371D53400E8D4EF /* AppDelegate.m in Sources */,
+				BD9AA5262371E49E00E8D4EF /* LSIPerson.m in Sources */,
 				BD9AA5082371D58300E8D4EF /* LSIPersonSearchTableViewController.m in Sources */,
 				BD9AA50B2371D64500E8D4EF /* LSIPersonTableViewCell.m in Sources */,
 				BD9AA4F02371D53500E8D4EF /* main.m in Sources */,
