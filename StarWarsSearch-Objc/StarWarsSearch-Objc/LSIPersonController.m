@@ -54,7 +54,6 @@ static NSString *const baseURLString = @"https://swapi.co/api/people";
 			return;
 		}
 		
-		
 		if (![json isKindOfClass:[NSDictionary class]]) { // [NSArray class] [NSNull class]
 			NSLog(@"JSON was not a top level dictionary as expected");
 			completion(nil, [[NSError alloc] init]); // TODO: Create a meaningful error type

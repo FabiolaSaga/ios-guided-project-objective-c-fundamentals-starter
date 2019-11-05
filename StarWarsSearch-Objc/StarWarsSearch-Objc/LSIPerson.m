@@ -44,6 +44,9 @@
 	NSString *height = dictionary[@"height"];
 	NSString *eyeColor = dictionary[@"eye_color"];
 	
+//	NSNumber *temp = dictionary[@"temp"];
+//	double tempAsDouble = temp.doubleValue;
+	
 	return [self initWithName:name birthYear:birthYear height:height eyeColor:eyeColor];
 }
 
