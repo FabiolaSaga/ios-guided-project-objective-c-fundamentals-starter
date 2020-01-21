@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+//class Person: NSObject {
+//	let name: String
+//}
+
 @interface LSIPerson : NSObject
 
 @property NSString *name;

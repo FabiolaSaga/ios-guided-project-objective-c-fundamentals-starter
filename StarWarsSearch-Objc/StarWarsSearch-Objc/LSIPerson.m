@@ -19,7 +19,6 @@
 	NSString *birthYear = dictionary[@"birth_year"];
 	NSString *eyeColor = dictionary[@"eye_color"];
 		
-		
 	return [self initWithName:name birthYear:birthYear height:height eyeColor:eyeColor];
 }
 
