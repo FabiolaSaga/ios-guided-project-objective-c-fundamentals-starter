@@ -46,7 +46,11 @@
 			}
 			
 			NSLog(@"People: %@", people);
+			// store people
+			self.people = people;
 			
+			// update UI
+			[self.tableView reloadData];
 			
 		});
 	}];
@@ -56,14 +60,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-	// TODO: Return the number of people in the search results
-	return 0;
+	return self.people.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LSIPersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
 
-	// TODO: Update the cell with the current person
+	LSIPerson *person = self.people[indexPath.row];
+	cell.nameLabel.text = person.name;
+	cell.eyeColorLabel.text = person.eyeColor;
+	cell.heightLabel.text = person.height;
+	cell.birthYearLabel.text = person.birthYear;
+	
+	// TODO: update to have units!
+	
     return cell;
 }
 
