@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0236F723D7AF4500065094 /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0236F623D7AF4500065094 /* LSIFileHelper.m */; };
 		BD9AA4DF2371D53400E8D4EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */; };
 		BD9AA4E22371D53400E8D4EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA4E12371D53400E8D4EF /* SceneDelegate.m */; };
 		BD9AA4EA2371D53500E8D4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9AA4E92371D53500E8D4EF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD0236F623D7AF4500065094 /* LSIFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFileHelper.m; sourceTree = "<group>"; };
 		BD9AA4DA2371D53400E8D4EF /* StarWarsSearch-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StarWarsSearch-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9AA4DD2371D53400E8D4EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BD9AA5102371D8B000E8D4EF /* LSIFileHelper.h */,
+				BD0236F623D7AF4500065094 /* LSIFileHelper.m */,
 				BD9AA4F92371D53600E8D4EF /* LSIStarWarsAPITests.m */,
 				BD9AA50D2371D7D400E8D4EF /* LSIPersonTests.m */,
 				BD9AA5112371D8E200E8D4EF /* Person.json */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0236F723D7AF4500065094 /* LSIFileHelper.m in Sources */,
 				BD9AA4FA2371D53600E8D4EF /* LSIStarWarsAPITests.m in Sources */,
 				BD9AA50E2371D7D400E8D4EF /* LSIPersonTests.m in Sources */,
 			);
