@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+// FIXME: This needs a .h and .m file so it doesn't cause duplicate symbols if imported more
+// than 1 time!
+
 NSData *loadFile(NSString *filename, NSBundle *bundle) {
 	NSString *basename = [filename stringByDeletingPathExtension];
 	NSString *extension = [filename pathExtension];
